@@ -1,8 +1,9 @@
 # Turimas "users" masyvas. 
 
-# Parašykite funkcijas, kurios atlikas nurodytas užduotis:
-# 1. funkcija "filterDogOwers" - kaip argumentą priims masyvą ir duoto masyvo 
+# Parašykite funkcijas, kurios atliks nurodytas užduotis:
+# 1. funkcija "filterDogOwners" - kaip argumentą priims masyvą ir duoto masyvo 
 # atveju grąžins "users", kurie turi augintinį.
+
 # 2. funkcija "filterAdults" - kaip argumentą priims masyvą ir duoto masyvo 
 # atveju grąžins masyvą su "users", kurie yra pilnamečiai.
 
@@ -17,3 +18,15 @@ users = [
   { "id": '8', "name": 'Simon Peterson', "age": 30, "hasDog": False },
   { "id": '9', "name": 'Daniel Cane', "age": 51, "hasDog": True },
 ]
+
+from operator import attrgetter, itemgetter
+
+# def filterDogOwners(users, age):
+#   for user in users:
+#     if user.age > 18
+#     return (users)
+
+# print(users)
+
+
+print(sorted(users, key=itemgetter("age")))
