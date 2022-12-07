@@ -21,12 +21,20 @@ users = [
 
 from operator import attrgetter, itemgetter
 
-# def filterDogOwners(users, age):
-#   for user in users:
-#     if user.age > 18
-#     return (users)
+def filterDogOwners():
+  for user in users:
+    if user["hasDog"] == bool("True"):
+      return (users)
 
-# print(users)
+print(filterDogOwners())
 
 
-print(sorted(users, key=itemgetter("age")))
+def filterAdults():
+  for user in users:
+    if user["age"] > 18:
+      return (users)
+
+print(filterAdults())
+
+# def filterAdults():
+#   adults = [user for user in users if user["age"]>18]

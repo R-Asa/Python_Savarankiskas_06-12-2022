@@ -9,6 +9,8 @@
 
 # Pastaba: rezultatai turi būti išrikiuoti abėcėlės tvarka
 
+from statistics import mean
+
 users = [
   { "id": '1', "name": 'John Smith', "age": 20 },
   { "id": '2', "name": 'Ann Smith', "age": 24 },
@@ -20,3 +22,27 @@ users = [
   { "id": '8', "name": 'Simon Peterson', "age": 30 },
   { "id": '9', "name": 'Daniel Cane', "age": 51 },
 ]
+
+
+def getUsersNames():
+  for user in users:
+    print([user["name"]])
+    
+getUsersNames()
+
+# ['John Smith']
+# ['Ann Smith']
+# ['Tom Jones']
+# ['Rose Peterson']
+# ['Alex John']
+# ['Ronald Jones']
+# ['Elton Smith']
+# ['Simon Peterson']
+# ['Daniel Cane']
+
+def getUserAverageAge():
+  print(round(mean(user["age"] for user in users)))
+
+getUserAverageAge()
+
+# 31
