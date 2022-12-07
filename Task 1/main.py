@@ -23,18 +23,16 @@ from operator import attrgetter, itemgetter
 
 def filterDogOwners():
   for user in users:
-    if user["hasDog"] == bool("True"):
+    if user["hasDog"] == True:
       return (users)
 
 print(filterDogOwners())
 
 
+
 def filterAdults():
   for user in users:
-    if user["age"] > 18:
+    if user["age"] >= 18:
       return (users)
 
 print(filterAdults())
-
-# def filterAdults():
-#   adults = [user for user in users if user["age"]>18]

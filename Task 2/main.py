@@ -27,8 +27,7 @@ users = [
 def getUsersNames():
   for user in users:
     print([user["name"]])
-    
-getUsersNames()
+
 
 # ['John Smith']
 # ['Ann Smith']
@@ -39,6 +38,8 @@ getUsersNames()
 # ['Elton Smith']
 # ['Simon Peterson']
 # ['Daniel Cane']
+
+
 
 def getUserAverageAge():
   print(round(mean(user["age"] for user in users)))

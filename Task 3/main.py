@@ -10,23 +10,9 @@ audi = {
   "color": 'white',
 }
 
-def shshowObjectKeys():
-  for x in audi:
-    print(audi[x])
-
-shshowObjectKeys()
-
-# audi
-# A6
-# 2005
-# white
-
-
-# arba
-
-def showObjectKeys_2():
+def showObjectKeys():
   audi_values = audi.values()
   print(audi_values)
 
-showObjectKeys_2()
+showObjectKeys()
 # dict_values(['audi', 'A6', 2005, 'white'])
