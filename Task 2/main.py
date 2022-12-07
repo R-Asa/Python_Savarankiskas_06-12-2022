@@ -28,6 +28,7 @@ def getUsersNames():
   for user in users:
     print([user["name"]])
 
+getUsersNames()
 
 # ['John Smith']
 # ['Ann Smith']

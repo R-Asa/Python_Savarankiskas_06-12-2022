@@ -19,7 +19,6 @@ users = [
   { "id": '9', "name": 'Daniel Cane', "age": 51, "hasDog": True },
 ]
 
-from operator import attrgetter, itemgetter
 
 def filterDogOwners():
   for user in users:
